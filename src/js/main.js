@@ -9,7 +9,9 @@ $('div').click(function() {
 });
 
 
-console.log($('div').eq(2).find('.some'));
+// console.log($('div').eq(2).find('.some'));
+console.log($('.some').closest('.findmes').addClass('wewewe'));
+// console.log($('.findme').siblings());
 
 
 // console.log($('button').html('hello'));
