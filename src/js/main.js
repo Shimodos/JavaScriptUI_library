@@ -10,8 +10,8 @@ $('div').click(function() {
 
 
 // console.log($('div').eq(2).find('.some'));
-console.log($('.some').closest('.findmes').addClass('wewewe'));
-// console.log($('.findme').siblings());
+// console.log($('.some').closest('.findmes').addClass('wewewe'));
+$('button').fadeIn(1600);
 
 
 // console.log($('button').html('hello'));
