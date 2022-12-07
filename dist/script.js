@@ -336,8 +336,8 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.animateOverTime = functi
       timeStart = time;
     }
     let timeElapsed = time - timeStart;
-    let compilation = Math.min(timeElapsed / dur, 1);
-    cb(compilation);
+    let complection = Math.min(timeElapsed / dur, 1);
+    cb(complection);
     if (timeElapsed < dur) {
       requestAnimationFrame(_animateOverTime);
     } else {
@@ -366,7 +366,6 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.fadeOut = function (dur,
       if (complection === 1) {
         this[i].style.display = 'none';
       }
-      this[i].style.opacity = complection;
     };
     const ani = this.animateOverTime(dur, _fadeOut, fin);
     requestAnimationFrame(ani);
@@ -388,7 +387,6 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.fadeToggle = function (d
         if (complection === 1) {
           this[i].style.display = 'none';
         }
-        this[i].style.opacity = complection;
       };
       const ani = this.animateOverTime(dur, _fadeOut, fin);
       requestAnimationFrame(ani);
